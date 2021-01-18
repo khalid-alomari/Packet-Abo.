@@ -32,4 +32,5 @@ zwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe
 ```
 I opened wireshark and searched for ``` lllllllllllllllllllllllllllllllllllllllllllllll0 ``` string to find 32 unknown packets, which was interesting because the length of the md5 hashes is 32 too, so I filtered and sorted them and I took each char at the end then combiend them together to get the flag
 ![packet-abomination-solve](https://user-images.githubusercontent.com/22657154/37759323-ed14f6a2-2dbb-11e8-933f-03a5286f8ffc.png)
+udp.stream eq 00
 ``` Flag: 5a365f92d8c7f2e2c109974f5fc85ed5 ```
